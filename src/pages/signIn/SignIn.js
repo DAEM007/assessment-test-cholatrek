@@ -3,7 +3,10 @@ import { useState } from "react";
 // All styles import
 import "./SignIn.css";
 // All assets import
+import Logo from "../../assets/logo.png";
 import Justice from "../../assets/justice.png";
+import checkBox from "../../assets/checkbox.png";
+import eyelash from "../../assets/eye-slash.png";
 
 const SignIn = () => {
     const [email, setEmail] = useState('');
@@ -15,8 +18,7 @@ const SignIn = () => {
             <div className="register">
                 <div className="container">
                     <div className="logo">
-                        <img src="" alt="logo" />
-                        <img src="" alt="logo-text" />
+                        <img className="logo-img" src={Logo} alt="logo" />
                     </div>
                     <div className="header">
                         <h1>Login as Registrar</h1>
@@ -24,7 +26,7 @@ const SignIn = () => {
                     </div>
                     <form>
                             <label>
-                                <span>Email</span>
+                                <span className="email">Email</span>
                                 <input 
                                     type="email"
                                     onChange={(e) => setEmail(e.target.value)}
@@ -34,7 +36,7 @@ const SignIn = () => {
                                 />
                             </label>
                             <label>
-                                <span>Password</span>
+                                <span className="password">Password</span>
                                 <input 
                                     type="password"
                                     onChange={(e) => setPassword(e.target.value)}
@@ -42,9 +44,13 @@ const SignIn = () => {
                                     placeholder='Password'
                                     required
                                 />
+                                <img className="vector" src={eyelash} alt="vector" />
                             </label>
                         <div className="row">
-                            <span className="remember">Remember me</span>
+                            <span className="remember">
+                                <img src={checkBox} alt="check-box" />
+                                Remember me
+                            </span>
                             <span className="forgot">forgot password?</span>
                         </div>
                         <button>Log in</button>
