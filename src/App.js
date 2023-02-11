@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <Router>
         <SideBar />
-          <div className="container">
+          <div className="wrap">
             <NavBar />
             <Routes>
               <Route path="/" element={ <Dashboard /> } />
