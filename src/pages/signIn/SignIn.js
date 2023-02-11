@@ -22,14 +22,18 @@ const SignIn = () => {
             alert('Password must be greater than 6 characters');
         }
         // console.log(email, password);
-        
+
         // Redirect to dashboard
-        navigate("/");
+        if(password.length > 6){
+            navigate("/");
+        }
     }
 
     return (
         <div className="sign-in">
-            <img src={Justice} alt="justice" />
+            <div>
+                <img src={Justice} alt="justice" />
+            </div>
             <div className="register">
                 <div className="container">
                     <div className="logo">
