@@ -1,5 +1,6 @@
 // All react imports
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // All styles import
 import "./SignIn.css";
 // All assets import
@@ -11,6 +12,20 @@ import eyelash from "../../assets/eye-slash.png";
 const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+
+    // submit form
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // validate form
+        if(password.length <= 6){
+            alert('Password must be greater than 6 characters');
+        }
+        // console.log(email, password);
+        
+        // Redirect to dashboard
+        navigate("/");
+    }
 
     return (
         <div className="sign-in">
@@ -24,7 +39,7 @@ const SignIn = () => {
                         <h1>Login as Registrar</h1>
                         <h6>Login to start managing filing process</h6>
                     </div>
-                    <form>
+                    <form onSubmit={handleSubmit}>
                             <label>
                                 <span className="email">Email</span>
                                 <input 
