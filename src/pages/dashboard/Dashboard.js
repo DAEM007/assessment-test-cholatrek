@@ -9,13 +9,10 @@ import decreaseIcon from "../../assets/decrease.png";
 import increaseIcon from "../../assets/increase.png";
 import File from "../../assets/file.png";
 import Talk from "../../assets/talk.png";
-// All component imports
-import SideBar from "../../components/SideBar";
 
 const Dashboard = () => {
     return (
         <div className="dashboard">
-            <SideBar />
             <div className="navbar">
                 <img className="notify-nav" src={NotifyNav} alt="notification" />
                 <img src={ProfilePic} alt="profile-pic" />

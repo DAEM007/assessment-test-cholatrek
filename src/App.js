@@ -5,11 +5,14 @@ import './App.css';
 // All pages import
 import SignIn from "./pages/signIn/SignIn";
 import Dashboard from "./pages/dashboard/Dashboard";
+// All component imports~
+import SideBar from "./components/SideBar";
 
 function App() {
   return (
     <div className="App">
       <Router>
+          <SideBar />
             <Routes>
               <Route path="/" element={ <Dashboard /> } />
               <Route path="/signIn" element={ <SignIn /> } />
