@@ -24,61 +24,61 @@ const SideBar = () => {
             <nav className="links">
                 <ul>
                     <li>
-                        <NavLink to="/">
+                        <NavLink end to="/">
                             <img src={DashboardIcon} alt="dashboard-icon" />
                             <span>Dashboard</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/register">
                             <img src={RegistrarIcon} alt="registrar-icon" />
                             <span>Registrars</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/pending">
                             <img src={DocumentTextIcon} alt="pending-icon" />
                             <span>Pending Files</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/performance">
                             <img src={PerformanceIcon} alt="performance-icon" />
                             <span>My Performance</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/case">
                             <img src={CaseIcon} alt="case-icon" />
                             <span>Track a Case</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/notification">
                             <img src={NotificationIcon} alt="notification-icon" />
                             <span>Notifications</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/profile">
                             <img src={ProfileIcon} alt="profile-icon" />
                             <span>Profile</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/counsel">
                             <img src={CounselIcon} alt="counsel-icon" />
                             <span>Counsel</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink>
+                        <NavLink to="/firm">
                             <img src={FirmIcon} alt="firm-icon" />
                             <span>All firm</span>   
                         </NavLink>
                     </li>
                     <div className="logout">
-                        <NavLink>
+                        <NavLink to="/signIn">
                             <img src={LogoutIcon} alt="logout-icon" />
                             <span>Logout</span>
                         </NavLink>

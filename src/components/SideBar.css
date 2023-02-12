@@ -21,11 +21,11 @@
 .links {
     width: 100%;
     height: 464px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .links ul {
-    width: 100%;
+    /* width: 100%; */
     padding: 0;
     margin: 0;
 }
@@ -35,14 +35,22 @@
 }
 
 .links a {
+    display: flex;
+    width: 100%;
     text-decoration: none;
     color: #BABBBE;
-    margin-left: 56px;
+    /* margin-left: 56px; */
     font-style: normal;
     line-height: 24px;
     letter-spacing: -0.01em;
 }
 
+.links img,
+.links span {
+    margin-top: 6px;
+    margin-left: 56px;
+    margin-bottom: 6px;
+}
 
 .links img {
     width: 20px;
@@ -54,10 +62,10 @@
     margin-left: 16.67px;
 }
 
-/* .links a.active {
+.links a.active {
     color: #FFFFFF;
     background: #0D294D;
-} */
+}
 
 .links .logout {
     margin-top: 120px;
