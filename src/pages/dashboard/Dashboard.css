@@ -1,9 +1,85 @@
 
 
 .dashboard {
-    width: 85px;
-    height: 24px;
+    width: 1200px;
+    height: 100vh;
     position: absolute;
     top: 124px;
     left: 320px;
+    font-weight: 600;
+}
+
+.dashboard .navbar {
+    position: absolute;
+    display: flex;
+    top: -100px;
+    left: 750px;
+    margin-left: 100px;
+}
+
+.dashboard .notify-nav {
+    margin-right: 30px;
+}
+
+.cards {
+    display: flex;
+    position: inherit;
+    top: 0;
+    right: 170px;
+    flex-direction: row;
+    column-gap: 30px;
+    padding: 0 5%;
+}
+
+.cards .card {
+    background: #ffffff;
+    width: 300px;
+    height: 185px;
+    margin-top: 40px;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.cards .card-heading {
+    padding-top: 18px;
+    padding-left: 23px;
+}
+
+.cards .card-number {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 53px;
+    padding-top: 26px;
+    padding-left: 23px;
+}
+
+.cards .card-icon {
+    padding-top: 10px;
+    padding-right: 23px;
+}
+
+.number-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.decrease-increase {
+    font-size: 12px;
+}
+
+.decrease-increase .decrease img {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.decrease-increase .decrease .red {
+    color: #FA7066;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.decrease-increase .increase .green {
+    color: #5DB975;
+    margin-right: 10px;
+    margin-left: 5px;
 }
